@@ -38,7 +38,7 @@ window.addEventListener("load", function(){
   var spanPass = document.getElementById("spanPass");
 
   var expEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  var expPass = /\S{6-20}/;
+  var expPass = /\S{6-20}$/;
   document.getElementById("signUpForm").addEventListener("submit", function(){
     event.preventDefault();
   });
@@ -52,9 +52,9 @@ window.addEventListener("load", function(){
 
   document.getElementById("signUpUser").addEventListener("click", function(){
     var usuario = new NewCoder(inpName.value, inpLastName.value, inpEmail.value, inpPass.value);
-  //   spanEmail.innerHTML = (!expEmail.test(inpEmail.value))? "*Todos los campos son obligatorios*" : spanMessage.innerHTML = ""
-  //   console.log(inpEmail.value);
-  //  (expPass.test(inpPass.value) == false)? spanPass.innerText = "*Ingrese en 6 y 20 caracteres*" : spanPass.innerText = "";
+    //   spanEmail.innerHTML = (!expEmail.test(inpEmail.value))? "*Todos los campos son obligatorios*" : spanMessage.innerHTML = ""
+    //   console.log(inpEmail.value);
+    //  (expPass.test(inpPass.value) == false)? spanPass.innerText = "*Ingrese en 6 y 20 caracteres*" : spanPass.innerText = "";
     required(usuario, spanMessage);
   })
 });
