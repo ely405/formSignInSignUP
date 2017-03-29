@@ -7,19 +7,28 @@
   <title>Regístrate</title>
 </head>
 <body>
+  <header>
+    <button type="submit" id="return">Regresar</button>
+  </header>
   <div>
     <form id="signUpForm">
       <label for="name">Nombre:</label>
-      <input type="text" placeholder="Ingresa tu nombre" id="name">
+      <input type="text" id="name">
+      <span></span>
       <br>
       <label for="lastName">Apellido:</label>
       <input type="text" placeholder="Ingresa tu apellido" id="lastName">
+      <span></span>
       <br>
       <label for="email">Correo:</label>
       <input type="email" placeholder="Ingresa tu correo" id="email">
+      <span id="spanEmail"></span>
       <br>
       <label for="pass">Contraseña:</label>
       <input type="password" placeholder="Ingresa tu contraseña" id="pass">
+      <span id="spanPass"></span>
+      <br>
+      <span id="spanMessage"></span>
       <br>
       <button type="submit" id="signUpUser">Regístrate</button>
     </form>
